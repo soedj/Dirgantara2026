@@ -1,0 +1,72 @@
+# ============================================================
+# KRTI VTOL 2026 - Root .gitignore
+# ============================================================
+
+# Virtual environment Python
+**/.venv/
+**/venv/
+**/env/
+
+# Python cache dan hasil build
+**/__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Konfigurasi lokal dan rahasia
+**/.env
+!**/.env.example
+*.key
+*.pem
+*.secret
+
+# Log dan output runtime
+**/logs/
+**/output/*
+!**/output/.gitkeep
+*.log
+*.jsonl
+
+# Dataset/rekaman/hasil pengujian berukuran besar
+**/markers/
+**/captures/
+**/recordings/
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.bag
+*.tlog
+*.bin
+
+# Arsip lokal
+*.zip
+*.tar
+*.tar.gz
+
+# File khusus pengembangan Ubuntu laptop
+# File Jetson tetap ikut: requirements-jetson.txt,
+# config/jetson_*.json, dan run_jetson_*.sh
+**/config/ubuntu_usb.json
+**/requirements-ubuntu.txt
+**/run_ubuntu.sh
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
