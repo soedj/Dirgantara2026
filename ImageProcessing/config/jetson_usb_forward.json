@@ -1,0 +1,31 @@
+{
+  "required_opencv": "4.11",
+  "camera": {
+    "name": "Jetson USB Forward Camera",
+    "mount": "forward",
+    "source_type": "usb",
+    "index": 0,
+    "device": "/dev/video0",
+    "input_path": null,
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "sensor_id": 0,
+    "flip_method": 0,
+    "pipeline": null
+  },
+  "aruco": {
+    "dictionary": "DICT_7X7_50",
+    "allowed_ids": [1, 2, 3, 4],
+    "border_bits": 1,
+    "corner_refinement": "SUBPIX",
+    "min_marker_perimeter_rate": 0.02,
+    "max_marker_perimeter_rate": 4.0
+  },
+  "output": {
+    "display": true,
+    "jsonl_path": "output/detections_forward.jsonl",
+    "save_video_path": null,
+    "json_rate_hz": 5.0
+  }
+}

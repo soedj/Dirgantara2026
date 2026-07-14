@@ -1,0 +1,3 @@
+# OpenCV tidak dicantumkan di sini.
+# Pada Jetson, pasang/build OpenCV 4.11.x dengan GStreamer=YES.
+numpy>=1.23,<2.0
